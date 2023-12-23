@@ -24,7 +24,7 @@
             }
 
             .centered-element {
-                width: 70%;
+                width: 20%;
                 /* height: 200px; */
                 background-color: #eaeaea08;
                 text-align: center;
@@ -88,9 +88,13 @@
                 }
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (min-width: 600px) {
       .centered-element {
         width: 80%; /* Adjust the width for smaller screens */
+      } 
+@media screen and (min-width: 1600px) {
+      .centered-element {
+        width: 50%; /* Adjust the width for smaller screens */
       }
         </style>
     </head>
