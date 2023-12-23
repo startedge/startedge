@@ -1,1 +1,111 @@
-<h1 style"center">Startedge Web View</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>startedge - your first destination for design kits & templates</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #131520;
+                color: #fff;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .hello {
+                position: absolute;
+                display: none;
+            }
+
+            .centered-element {
+                width: 70%;
+                /* height: 200px; */
+                background-color: #eaeaea08;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 80px 0px;
+                gap: 32px;
+                border-radius: 12px;
+                border: 2px #ffffff1e solid;
+                animation: cont-shad 2000ms infinite;
+            }
+.banner p{
+    font-size: 20px;
+    color: #c9cee8;
+}
+            @keyframes cont-shad {
+                0% {
+                    box-shadow: #19005d3a 0px 0px 200px;
+                }
+            }
+
+            .msge {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                animation: simpleAnimation 2s infinite;
+                gap: 4px;
+
+            }
+
+            .msge p {
+                animation: hello 2000ms ease-in-out infinite;
+            }
+
+            @keyframes hello {
+                0% {
+                    rotate: 10deg;
+                }
+
+                50% {
+                    rotate: 0deg;
+                }
+
+                100% {
+                    rotate: 20deg;
+                }
+            }
+
+            @keyframes none {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        </style>
+        <title>Centered Element</title>
+    </head>
+
+    <body>
+        <div class="hello">👋</div>
+        <div class="centered-element">
+            <div class="msge">
+                <p>👋</p>
+                Hello, Boss! Wait a sec...
+            </div>
+
+            <div class="banner">
+                <h1>Design in process</h1>
+                <p>Our site is coming soon</p>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
